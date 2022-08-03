@@ -34,6 +34,33 @@ function isPalindrome(x) {
         x = parseInt(x/10);
     }
     return reversed == temp;
+
+    /* Two pointer method
+    take one digit from the start, and another from the last */
+
+    // if (x < 0) {
+    //     return false;
+    // }
+
+    // if (x < 10) {
+    //     return true;
+    // }
+    //
+    // if (x % 10 === 0 && x !== 0) {
+    //     return false;
+    // }
+
+    // const str = String(x);
+    // let i = 0, j = str.length - 1;
+    //
+    // while (i < j) {
+    //     if (str[i] !== str[j]) {
+    //         return false;
+    //     }
+    //     i++;
+    //     j--;
+    // }
+    // return true;
 }
 
 let x = 242
